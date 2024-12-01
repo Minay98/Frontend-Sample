@@ -97,12 +97,12 @@ const MathCaptcha = () => {
       {captchaImage && <img src={captchaImage} alt="captcha" className=""/>}
       <form onSubmit={handleSubmit} className="">
         <input
-          type="number"
+          type="text"
           value={userAnswer}
           onChange={(e) => setUserAnswer(e.target.value)}
           placeholder="Enter your answer"
           required
-          className="p-[3px] text-base border rounded-md w-[200px] text-right mt-4"
+          className="p-1 pr-2 text-base border rounded-md w-[200px] text-right mt-4"
         />
         <section className="flex justify-between items-center mt-4">
           <button
